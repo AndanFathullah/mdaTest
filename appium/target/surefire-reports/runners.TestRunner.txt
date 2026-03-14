@@ -1,0 +1,73 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 70.25 s <<< FAILURE! -- in runners.TestRunner
+Test for Demo App.Success Login on the app -- Time elapsed: 23.44 s <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: '.view.activities.SplashActivity' or 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'fedora', ip: '192.168.0.182'
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.16-200.fc43.x86_64', java.version: '25.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appPackage: com.saucelabs.mydemoapp.and..., appium:automationName: uiAutomator2, appium:deviceName: AOSP on IA Emulator, appium:platformName: Android, appium:platformVersion: 9, appium:resetKeyboard: true, appium:udid: emulator-5554, appium:unicodeKeyboard: true}]}]
+Capabilities {appium:appPackage: com.saucelabs.mydemoapp.and..., appium:automationName: uiAutomator2, appium:deviceName: AOSP on IA Emulator, appium:platformName: Android, appium:platformVersion: 9, appium:resetKeyboard: true, appium:udid: emulator-5554, appium:unicodeKeyboard: true}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:308)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:211)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:197)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at stepdefinitions.DemoApp.user_navigates_to_app(DemoApp.java:32)
+	at ✽.User navigates to app(file:///home/auzan/Documents/code/mdaTest/src/test/java/features/DemoTest.feature:4)
+
+Test for Demo App.Success Purchase Selected Product -- Time elapsed: 23.82 s <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: '.view.activities.SplashActivity' or 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'fedora', ip: '192.168.0.182'
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.16-200.fc43.x86_64', java.version: '25.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appPackage: com.saucelabs.mydemoapp.and..., appium:automationName: uiAutomator2, appium:deviceName: AOSP on IA Emulator, appium:platformName: Android, appium:platformVersion: 9, appium:resetKeyboard: true, appium:udid: emulator-5554, appium:unicodeKeyboard: true}]}]
+Capabilities {appium:appPackage: com.saucelabs.mydemoapp.and..., appium:automationName: uiAutomator2, appium:deviceName: AOSP on IA Emulator, appium:platformName: Android, appium:platformVersion: 9, appium:resetKeyboard: true, appium:udid: emulator-5554, appium:unicodeKeyboard: true}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:308)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:211)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:197)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at stepdefinitions.DemoApp.user_navigates_to_app(DemoApp.java:32)
+	at ✽.User navigates to app(file:///home/auzan/Documents/code/mdaTest/src/test/java/features/DemoTest.feature:9)
+
+Test for Demo App.Success sorting product -- Time elapsed: 22.74 s <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: '.view.activities.SplashActivity' or 'com.saucelabs.mydemoapp.android.view.activities.SplashActivity' never started. Consider checking the driver's troubleshooting documentation. 
+Host info: host: 'fedora', ip: '192.168.0.182'
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.16-200.fc43.x86_64', java.version: '25.0.2'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:appPackage: com.saucelabs.mydemoapp.and..., appium:automationName: uiAutomator2, appium:deviceName: AOSP on IA Emulator, appium:platformName: Android, appium:platformVersion: 9, appium:resetKeyboard: true, appium:udid: emulator-5554, appium:unicodeKeyboard: true}]}]
+Capabilities {appium:appPackage: com.saucelabs.mydemoapp.and..., appium:automationName: uiAutomator2, appium:deviceName: AOSP on IA Emulator, appium:platformName: Android, appium:platformVersion: 9, appium:resetKeyboard: true, appium:udid: emulator-5554, appium:unicodeKeyboard: true}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:178)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:308)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:211)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:197)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:109)
+	at stepdefinitions.DemoApp.user_navigates_to_app(DemoApp.java:32)
+	at ✽.User navigates to app(file:///home/auzan/Documents/code/mdaTest/src/test/java/features/DemoTest.feature:15)
+
