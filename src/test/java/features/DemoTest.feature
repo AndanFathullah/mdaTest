@@ -14,5 +14,6 @@ Feature: Test for Demo App
   Scenario: Success sorting product
     Given User navigates to app
     When user sort name product descending
+    Then user see "Test.allTheThings() T-Shirt (yellow)" as expected
     When user sort price product ascending
-    Then user see result as expected
+    Then user see "$ 7.99" as expected

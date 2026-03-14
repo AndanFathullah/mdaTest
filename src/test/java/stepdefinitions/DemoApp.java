@@ -5,7 +5,6 @@ import io.appium.java_client.AppiumDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -107,8 +106,9 @@ public class DemoApp {
         Thread.sleep(5000);
     }
 
-    @Then("user see result as expected")
-    public void user_see_result_as_expected() throws InterruptedException {
+    @Then("user see {string} as expected")
+    public void user_see_result_as_expected(String text) throws InterruptedException {
+        driver.findElement(new AppiumBy.ByAndroidUIAutomator("new UiSelector().text(\""+ text +"\")")).isDisplayed();
         Thread.sleep(5000);
     }
 
